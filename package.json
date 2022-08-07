@@ -1,0 +1,51 @@
+{
+  "name": "otus-typescript-typing",
+  "version": "1.0.0",
+  "description": "OTUS TypeScript Typing",
+  "keywords": [
+    "otus",
+    "typescript"
+  ],
+  "homepage": "https://github.com/alexey-sidorov-dev/otus-typescript-typing#readme",
+  "bugs": {
+    "url": "https://github.com/alexey-sidorov-dev/otus-typescript-typing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexey-sidorov-dev/otus-typescript-typing.git"
+  },
+  "license": "ISC",
+  "author": "Alexey Sidorov",
+  "main": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint . --config eslint.config.js --ext .js,.ts && tsc --project tsconfig.json --noEmit",
+    "lint:all": "eslint . --config eslint.config.js --ext .js,.ts && tsc --project tsconfig.json --noEmit && prettier . --check",
+    "lint:all:fix": "eslint . --config eslint.config.js --ext .js,.ts --fix && prettier . --write",
+    "lint:fix": "eslint . --config eslint.config.js --ext .js,.ts --fix",
+    "prepare": "husky install",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/react": "^18.0.16",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "prettier-plugin-sh": "^0.12.8",
+    "react": "^18.2.0",
+    "typescript": "^4.7.4"
+  }
+}
