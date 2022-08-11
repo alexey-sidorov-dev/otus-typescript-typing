@@ -1,8 +1,8 @@
-// Есть функция которая достает из реакт компонента (любого, и Functional и Class) его defaultProps
-// Нужно заменить FIXME на правильный тип
+/*
+    Есть функция, которая достает из реакт компонента (любого: и Functional, и Class) его defaultProps.
+    Нужно заменить FIXME на правильный тип.
+*/
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type FIXME = any;
+type FIXME = React.ComponentType extends { defaultProps?: infer P } ? P | undefined : never;
 
-// Hint: infer
 export const getDefaultProps = <T>(component: React.ComponentType<T>): FIXME => component.defaultProps;

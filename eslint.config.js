@@ -18,11 +18,17 @@ module.exports = {
     "max-len": ["error", { ignoreComments: true, code: 120 }],
     "no-param-reassign": ["error", { props: false }],
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
-    "no-use-before-define": ["error", { functions: false, classes: true, variables: true }],
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": [
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
       "error",
-      { ignoreTypeValueShadow: true, ignoreFunctionTypeParameterNameValueShadow: true },
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+        ignoreTypeReferences: true,
+      },
     ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
   },
 };

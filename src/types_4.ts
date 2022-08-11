@@ -1,10 +1,11 @@
-// Есть объединение (юнион) типов заказов в различных состояниях
-// и функция filterOnlyInitialAndInWorkOrder которая принимает заказы в любых состояниях
-// А возвращает только initial и inWork
-// Нужно заменить FIXME на правильный тип вычисленный на основе Order
+/*
+  Есть объединение (юнион) типов заказов в различных состояниях
+  и функция filterOnlyInitialAndInWorkOrder, которая принимает заказы в любых состояниях,
+  а возвращает только initial и inWork.
+  Нужно заменить FIXME на правильный тип, вычисленный на основе Order
+*/
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type FIXME = any;
+type FIXME = Extract<Order, { state: "initial" | "inWork" }> | null;
 
 type Order =
   | {

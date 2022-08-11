@@ -1,18 +1,18 @@
-# "Решение задач на типизацию"
+# Курс [OTUS JavaScript Developer. Basic](https://otus.ru/lessons/javascript-basic/)
 
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-typescript-typing/workflows/PR%20Sanity%20Check/badge.svg)](https://github.com/alexey-sidorov-dev/otus-typescript-typing/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-typescript-typing/workflows/Add%20CodeSandbox%20link/badge.svg)](https://github.com/alexey-sidorov-dev/otus-typescript-typing/actions)
 
 ## Домашнее задание
 
-Решить задачи на типизацию.
+Решение задач на типизацию.
 
 ### Цель
 
 В результате выполнения ДЗ:
 
-- потренировать работу с типами TypeScript ;
-- познакомиться с Utility Types TypeScript .
+- потренировать работу с типами TypeScript;
+- познакомиться с Utility Types TypeScript.
 
 ### Необходимо
 
